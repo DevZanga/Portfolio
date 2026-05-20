@@ -8,7 +8,7 @@ import { SectionHeading } from "./SectionHeading";
 export function Testimonials() {
   return (
     <section className="scroll-mt-24 border-t border-line bg-surface/60 py-24 lg:py-32">
-      <div className="mx-auto max-w-6xl px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <MotionReveal>
           <SectionHeading
             label="Testimonials"

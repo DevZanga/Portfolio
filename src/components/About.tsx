@@ -27,7 +27,7 @@ const pillars = [
 export function About({ about, workingStyle }: AboutProps) {
   return (
     <section id="about" className="scroll-mt-24 py-24 lg:py-32">
-      <div className="mx-auto max-w-6xl px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <MotionReveal>
           <SectionHeading
             label="About"

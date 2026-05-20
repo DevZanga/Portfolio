@@ -14,7 +14,7 @@ export function SelectedWork() {
       id="work"
       className="scroll-mt-24 border-t border-line bg-paper py-24 lg:py-32"
     >
-      <div className="mx-auto max-w-6xl px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <MotionReveal>
           <div className="mb-14 flex flex-wrap items-end justify-between gap-8">
             <div className="max-w-2xl">

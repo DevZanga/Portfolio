@@ -21,7 +21,7 @@ export function Hero({ personal }: HeroProps) {
         aria-hidden
       />
 
-      <div className="relative mx-auto max-w-6xl px-6 pt-28 pb-20 lg:grid lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-12 lg:px-8 lg:pt-36 lg:pb-28">
+      <div className="relative mx-auto max-w-6xl px-4 pt-24 pb-16 sm:px-6 sm:pt-28 sm:pb-20 lg:grid lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-12 lg:px-8 lg:pt-36 lg:pb-28">
         <div>
           <motion.p
             initial={{ opacity: 0, y: 12 }}
@@ -32,7 +32,7 @@ export function Hero({ personal }: HeroProps) {
           </motion.p>
 
           <StaggerText
-            className="font-display text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-[3.5rem] lg:leading-[1.32]"
+            className="font-display text-3xl font-bold tracking-tight text-white sm:text-5xl lg:text-[3.5rem] lg:leading-[1.32]"
             lines={[`I'm ${firstName},`, "Product Design", "& UX Specialist"]}
             highlightIndex={2}
           />
