@@ -22,7 +22,7 @@ export function Experience({ experience }: ExperienceProps) {
           <SectionHeading
             label="Resume"
             title="My work experience"
-            description="From evaluating AI-generated UI to leading engineering — always advocating for clarity, polish, and user-centred decisions."
+            description="From evaluating visual and product UI to leading engineering — always advocating for clarity, polish, and user-centred decisions."
           />
         </MotionReveal>
 

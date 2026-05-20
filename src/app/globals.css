@@ -152,6 +152,16 @@ button:focus-visible {
   border-radius: 4px;
 }
 
+/* Hide Next.js dev badge (N logo in corner — dev only, not on production build) */
+[data-next-badge-root],
+[data-next-badge],
+#next-logo,
+[data-nextjs-dev-tools-button] {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

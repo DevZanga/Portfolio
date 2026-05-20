@@ -1,7 +1,7 @@
 export const designFocus = [
   { value: "4+", label: "Years experience", sub: "Design & engineering" },
   { value: "7+", label: "Figma disciplines", sub: "UI · Systems · Handoff" },
-  { value: "1000s", label: "Visual evaluations", sub: "AI & media QA" },
+  { value: "1000s", label: "Visual evaluations", sub: "Media & UI QA" },
   { value: "Remote", label: "Global collaboration", sub: "Async · UK-based" },
 ];
 
@@ -14,9 +14,9 @@ export const services = [
     highlights: ["User flows", "Hi-fi UI", "Prototypes"],
   },
   {
-    title: "AI Evaluation & QA",
+    title: "Visual QA & Evaluation",
     description:
-      "Structured visual critique of AI-generated UI, media, and layouts — rating hierarchy, polish, and coherence at scale.",
+      "Structured visual critique of generated UI, media, and layouts — rating hierarchy, polish, and coherence at scale.",
     variant: "ai" as const,
     highlights: ["Visual QA", "Critique", "At scale"],
   },
@@ -32,7 +32,7 @@ export const services = [
 export const whyHireMe = {
   title: "Why hire me?",
   description:
-    "I combine visual craft, design systems thinking, and hands-on engineering. From evaluating AI outputs at Outlier to shipping enterprise UI at Nabtech — I care how products look, feel, and perform for real users.",
+    "I combine visual craft, design systems thinking, and hands-on engineering. From large-scale visual evaluation at Outlier to shipping enterprise UI at Nabtech — I care how products look, feel, and perform for real users.",
   stats: [
     { value: "4+", label: "Years in product & UI" },
     { value: "7", label: "Core Figma practices" },
@@ -88,10 +88,10 @@ export const designProcess = [
 
 export const selectedWork = [
   {
-    title: "AI Visual Quality Systems",
+    title: "Visual Quality Systems",
     category: "UX Evaluation · Outlier",
     description:
-      "Rated and critiqued AI-generated UI screenshots and media at scale — layout, hierarchy, polish, and coherence.",
+      "Rated and critiqued generated UI screenshots and media at scale — layout, hierarchy, polish, and coherence.",
     tags: ["Visual QA", "Design Critique", "Structured Feedback"],
     accent: "bg-gradient-to-br from-violet-600/30 to-indigo-900/40",
     featured: true,

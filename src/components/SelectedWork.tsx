@@ -26,7 +26,7 @@ export function SelectedWork() {
                 Let&apos;s have a look at my work
               </h2>
               <p className="mt-6 max-w-xl text-base leading-[1.7] text-muted sm:text-lg">
-                Representative projects from AI evaluation, enterprise product,
+                Representative projects from visual evaluation, enterprise product,
                 and design-to-code delivery.
               </p>
             </div>

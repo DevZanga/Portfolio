@@ -88,7 +88,7 @@ export function Hero({ personal }: HeroProps) {
             </div>
             <div className="h-10 w-px bg-white/15" aria-hidden />
             <p className="max-w-[200px] text-xs leading-[1.6] text-white/55">
-              Design-led work across AI evaluation, enterprise UI, and product
+              Design-led work across visual evaluation, enterprise UI, and product
               teams.
             </p>
           </motion.div>
