@@ -13,7 +13,20 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Deploy
 
-Deploy to [Vercel](https://vercel.com) or Netlify — both support Next.js out of the box.
+### GitHub Pages (free)
+
+Your site will live at: **https://devzanga.github.io/Portfolio/**
+
+1. Push code to `main` on [DevZanga/Portfolio](https://github.com/DevZanga/Portfolio)
+2. On GitHub: open the repo → **Settings** → **Pages**
+3. Under **Build and deployment** → **Source**, choose **GitHub Actions**
+4. After the workflow runs (Actions tab), the site is live
+
+First time only: **Settings → Pages →** confirm source is **GitHub Actions**, not “Deploy from branch”.
+
+### Vercel (alternative)
+
+Deploy to [Vercel](https://vercel.com) — import the repo for a custom domain and faster Next.js hosting.
 
 ## Git author (this repo only)
 
