@@ -23,11 +23,11 @@ export function SelectedWork() {
                 Portfolio
               </p>
               <h2 className="font-display leading-display text-3xl font-bold tracking-tight text-ink sm:text-4xl lg:text-5xl">
-                Let&apos;s have a look at my work
+                Work I&apos;m proud of
               </h2>
               <p className="mt-6 max-w-xl text-base leading-[1.7] text-muted sm:text-lg">
-                Representative projects from visual evaluation, enterprise product,
-                and design-to-code delivery.
+                Projects where clarity, care, and how people experience the product
+                came first.
               </p>
             </div>
             <a

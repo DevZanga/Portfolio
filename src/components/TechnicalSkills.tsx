@@ -34,8 +34,8 @@ export function TechnicalSkills({ technicalSkills }: TechnicalSkillsProps) {
           <SectionHeading
             variant="dark"
             label="Also fluent in"
-            title="Code that supports design"
-            description="I implement what I design — so handoff conversations stay grounded in reality."
+            title="I also build"
+            description="Enough engineering to collaborate honestly — so what we design can actually ship."
           />
         </MotionReveal>
 

@@ -1,4 +1,4 @@
-type IconVariant = "ui" | "ai" | "systems";
+type IconVariant = "ui" | "care" | "systems";
 
 export function ServiceIcon({ variant }: { variant: IconVariant }) {
   const className = "h-6 w-6 text-white";
@@ -12,12 +12,15 @@ export function ServiceIcon({ variant }: { variant: IconVariant }) {
     );
   }
 
-  if (variant === "ai") {
+  if (variant === "care") {
     return (
       <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden>
-        <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.5" />
-        <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.5" />
-        <path d="M12 3v2M12 19v2M3 12h2M19 12h2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <path
+          d="M12 21s-6.5-4.35-9-8.5C1.5 9 3.5 5 7 5c2 0 3.5 1.5 5 3.5C13.5 6.5 15 5 17 5c3.5 0 5.5 4 4 7.5-2.5 4.5-9 8.5-9 8.5z"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinejoin="round"
+        />
       </svg>
     );
   }

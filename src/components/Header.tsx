@@ -89,7 +89,7 @@ export function Header({ personal }: HeaderProps) {
                 : "bg-white text-ink"
             }`}
           >
-            Hire me
+            Say hello
           </motion.a>
 
           <button

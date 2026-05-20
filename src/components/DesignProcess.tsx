@@ -13,8 +13,8 @@ export function DesignProcess() {
         <MotionReveal>
           <SectionHeading
             label="Process"
-            title="How I design"
-            description="A repeatable flow from ambiguity to shipped interface — used across freelance, contract, and product teams."
+            title="How I work with you"
+            description="A calm, human process — listening first, designing with care, shipping together."
           />
         </MotionReveal>
 

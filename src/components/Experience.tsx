@@ -9,7 +9,7 @@ interface ExperienceProps {
   experience: ExperienceItem[];
 }
 
-const designHeavy = new Set(["Outlier", "Braintrust"]);
+const peopleCentred = new Set(["Outlier", "Braintrust"]);
 
 export function Experience({ experience }: ExperienceProps) {
   return (
@@ -21,8 +21,8 @@ export function Experience({ experience }: ExperienceProps) {
         <MotionReveal>
           <SectionHeading
             label="Resume"
-            title="My work experience"
-            description="From evaluating visual and product UI to leading engineering — always advocating for clarity, polish, and user-centred decisions."
+            title="Where I've worked"
+            description="Roles where I helped teams build products that feel clear, welcoming, and easy for real people to use."
           />
         </MotionReveal>
 
@@ -38,7 +38,7 @@ export function Experience({ experience }: ExperienceProps) {
                 <div className="hidden lg:flex lg:justify-center">
                   <span
                     className={`relative z-10 flex h-10 w-10 items-center justify-center rounded-full border-2 font-mono text-xs font-bold leading-none ${
-                      designHeavy.has(role.company)
+                      peopleCentred.has(role.company)
                         ? "border-accent bg-accent-soft text-accent"
                         : "border-line bg-surface text-muted"
                     }`}
@@ -49,11 +49,11 @@ export function Experience({ experience }: ExperienceProps) {
 
                 <article className="rounded-2xl border border-line bg-paper p-8 transition-shadow hover:shadow-lg hover:shadow-accent/8">
                   <div>
-                    {designHeavy.has(role.company) && (
-                      <span className="mb-3 inline-block rounded-full bg-accent-soft px-3 py-1 text-xs font-semibold text-accent">
-                        Design-focused
-                      </span>
-                    )}
+                      {peopleCentred.has(role.company) && (
+                        <span className="mb-3 inline-block rounded-full bg-accent-soft px-3 py-1 text-xs font-semibold text-accent">
+                          People-centred
+                        </span>
+                      )}
                     <h3 className="font-display leading-snug text-2xl font-bold text-ink">
                       {role.title}
                     </h3>

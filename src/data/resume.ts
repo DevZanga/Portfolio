@@ -3,8 +3,7 @@ import type { Resume } from "@/types/resume";
 export const resume: Resume = {
   personal: {
     name: "Adebayo Ibrahim",
-    headline:
-      "Product Design & UX | AI Data Annotation | Figma Specialist",
+    headline: "Product Design & UX | Figma Specialist | Design Systems",
     location: "Sheffield, United Kingdom",
     email: "adebayoibrahim808@gmail.com",
     phone: "07478616720",
@@ -12,27 +11,27 @@ export const resume: Resume = {
     github: "https://github.com/DevZanga",
   },
   about:
-    "I'm a designer and technologist who genuinely cares about how things look and feel. My background spans UI/UX design in Figma, AI data annotation, and full-stack engineering, which means I bring both a visual sensibility and a technical understanding to every project I work on. I have hands-on experience evaluating the aesthetic and functional quality of digital content, from rating AI-generated outputs at Outlier to annotating images and videos at Braintrust. I enjoy dissecting what makes a design work the balance of spacing, the weight of type, the logic of a layout and I communicate that thinking clearly and precisely.",
+    "I'm a designer who cares about how people actually experience digital products — not just how they look in a mockup. My work spans UI/UX in Figma, thoughtful visual review, and hands-on engineering, so I understand both the craft of design and what it takes to ship it. I listen carefully, explain my thinking clearly, and treat every screen as something a real person will use.",
   experience: [
     {
-      title: "AI Generalist & Aether Generalist",
+      title: "Visual Quality & UX Specialist",
       company: "Outlier",
       type: "Contract",
       bullets: [
-        "Complete image, video, and audio micro-tasks designed to improve the performance of AI models essentially acting as a quality filter for machine generated content.",
-        "Rate and rank visual outputs, including UI screenshots, design compositions, and media assets, assessing them on layout, coherence, visual hierarchy, and overall polish.",
-        "Write structured qualitative feedback explaining why something scores as it does a skill that translates directly into design critique and UX evaluation.",
-        "Operate independently in a fully remote, asynchronous environment, meeting high-quality standards consistently across large volumes of tasks.",
+        "Reviewed images, video, and interface layouts with a focus on clarity, hierarchy, and how they would feel to a real user.",
+        "Gave structured, honest feedback on visual work — what works, what confuses, and what could feel more polished.",
+        "Worked independently across remote teams, keeping quality consistent even on high-volume projects.",
+        "Bridged design critique and practical UX thinking in every review.",
       ],
     },
     {
-      title: "Data Annotator",
+      title: "Visual Content Specialist",
       company: "Braintrust",
       type: "Contract",
       bullets: [
-        "Annotated and categorized images and videos to build reliable training datasets for machine learning models, with a focus on visual content.",
-        "Applied a careful eye for composition, colour, subject matter, and design attributes to classify content with precision and consistency.",
-        "Maintained annotation quality across long running projects, adapting quickly whenever guidelines were updated or refined by project leads.",
+        "Organised and assessed visual content with attention to composition, colour, and how information comes across to people.",
+        "Stayed consistent and reliable across long projects, adapting when guidelines changed.",
+        "Collaborated calmly with project leads and teammates in a fully remote setup.",
       ],
     },
     {
@@ -40,10 +39,10 @@ export const resume: Resume = {
       company: "Nabtech Limited",
       type: null,
       bullets: [
-        "Lead the development of enterprise grade web applications, with particular attention to how the product feels to use, not just how it functions under the hood.",
-        "Work closely with design teams, consuming Figma specs, CSS annotations, and component documentation to implement interfaces that stay true to the original vision.",
-        "Build and maintain RESTful and GraphQL APIs using Node.js, and contribute to AI-integrated product features across the stack.",
-        "Contribute to sprint planning, design reviews, and continuous delivery, comfortable operating at both the design and engineering side of a project.",
+        "Led development of enterprise web apps with a strong focus on how the product feels in everyday use.",
+        "Worked closely with designers, turning Figma specs into interfaces that stayed true to the original intent.",
+        "Built and maintained APIs with Node.js while keeping the user experience at the centre of decisions.",
+        "Joined design reviews and sprint planning — comfortable on both design and engineering sides.",
       ],
     },
     {
@@ -51,9 +50,9 @@ export const resume: Resume = {
       company: "Emjay Solutions Limited",
       type: null,
       bullets: [
-        "Built and shipped full-stack products using React, Next.js, and Node.js, with a consistent focus on UI consistency and user experience quality.",
-        "Collaborated with UX designers to turn wireframes and prototypes into accessible, polished interfaces that matched the intended design system.",
-        "Improved database performance across PostgreSQL, MySQL, and MongoDB, and championed better QA practices within the team.",
+        "Shipped full-stack products with React and Next.js, prioritising consistency and ease of use.",
+        "Partnered with UX designers to turn wireframes into accessible, polished interfaces.",
+        "Improved performance and quality practices so the team could deliver with confidence.",
       ],
     },
   ],
@@ -61,37 +60,37 @@ export const resume: Resume = {
     {
       name: "UI/UX Design",
       description:
-        "I design app, website, and software interfaces from scratch, thinking through visual hierarchy, spacing, and usability at every stage.",
+        "I design interfaces from scratch with real people in mind — hierarchy, spacing, and flows that feel natural.",
     },
     {
       name: "Prototyping",
       description:
-        "I build clickable, interactive mockups that simulate how a product actually behaves, useful for testing flows before a single line of code is written.",
+        "I build clickable mockups so teams can feel the product before development starts.",
     },
     {
       name: "Design Systems",
       description:
-        "I maintain libraries of reusable components, colour tokens, and shared styles that keep products visually consistent at scale.",
+        "I create shared components and tokens so products stay consistent and easier for everyone to use.",
     },
     {
       name: "Wireframing",
       description:
-        "I sketch user flows and layouts early, which saves time and aligns teams before committing to high-fidelity designs.",
+        "I sketch flows early so teams align on the human journey before polishing pixels.",
     },
     {
       name: "Collaboration",
       description:
-        "I use Figma as a shared workspace, leaving comments, reviewing other people's work, and iterating in real time alongside teammates.",
+        "I work openly in Figma — comments, reviews, and honest conversation with teammates.",
     },
     {
       name: "Developer Handoff",
       description:
-        "I prepare annotated specs with measurements, CSS snippets, and exportable assets so engineers have everything they need without guessing.",
+        "I prepare clear specs so engineers can build what people actually need, without guesswork.",
     },
     {
       name: "FigJam & Whiteboarding",
       description:
-        "I run brainstorming sessions and journey mapping workshops using FigJam, helping teams think visually and align early.",
+        "I facilitate workshops that help teams think together and agree on direction early.",
     },
   ],
   technicalSkills: {
@@ -112,9 +111,9 @@ export const resume: Resume = {
     Other: ["Git", "GitHub", "Jira"],
   },
   certifications: [
-    "AI & LLM Evaluation Practice — Outlier / Freelance",
+    "Visual Quality & UX Practice — Outlier / Freelance",
     "Agile Software Development & QA Practices",
   ],
   workingStyle:
-    "I pay close attention to detail without getting precious about it, I can give and receive design feedback constructively. I'm organized, self-directed, and comfortable working across time zones or asynchronously. I take quality seriously, but I also know when something is good enough to ship.",
+    "I'm easy to work with — I listen, give honest feedback kindly, and respect people's time. I'm organised, self-directed, and happy working async across time zones. I care about quality, but I also know when something is ready for real users.",
 };

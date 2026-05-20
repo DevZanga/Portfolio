@@ -27,7 +27,7 @@ export function WhyHireMe({ personal }: WhyHireMeProps) {
               whileTap={{ scale: 0.98 }}
               className="mt-4 inline-flex rounded-full bg-accent px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-accent/25"
             >
-              Hire me
+              Let&apos;s talk
             </motion.a>
           </MotionReveal>
 

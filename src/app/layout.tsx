@@ -26,13 +26,13 @@ export const viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "ZANGA — Adebayo Ibrahim · UI/UX Designer",
+  title: "ZANGA — Adebayo Ibrahim · Human-Centred UI/UX",
   description:
-    "ZANGA — UI/UX designer specializing in Figma, design systems, prototyping, and pixel-perfect implementation. Sheffield, UK.",
+    "ZANGA — UI/UX designer in Sheffield. Warm, people-first interfaces in Figma — from wireframes to handoff.",
   openGraph: {
-    title: "ZANGA — Adebayo Ibrahim · UI/UX Designer",
+    title: "ZANGA — Adebayo Ibrahim · Human-Centred UI/UX",
     description:
-      "Product designer crafting thoughtful interfaces — from wireframes to shipped products.",
+      "A designer who cares how products feel for real people — thoughtful, clear, and easy to work with.",
     type: "website",
   },
 };

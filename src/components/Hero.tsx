@@ -12,12 +12,13 @@ interface HeroProps {
 
 export function Hero({ personal }: HeroProps) {
   const firstName = personal.name.split(" ")[0];
+  const city = personal.location.split(",")[0];
 
   return (
     <section className="hero-mesh relative overflow-x-clip">
       <FloatingOrbs />
       <div
-        className="pointer-events-none absolute inset-0 opacity-[0.12] grid-bg"
+        className="pointer-events-none absolute inset-0 opacity-[0.1] grid-bg"
         aria-hidden
       />
 
@@ -26,14 +27,14 @@ export function Hero({ personal }: HeroProps) {
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            className="mb-4 font-mono text-sm font-medium text-accent-light"
+            className="mb-4 font-mono text-sm font-medium text-amber-200/90"
           >
-            Hello!
+            Hello — glad you&apos;re here
           </motion.p>
 
           <StaggerText
             className="font-display text-3xl font-bold tracking-tight text-white sm:text-5xl lg:text-[3.5rem] lg:leading-[1.32]"
-            lines={[`I'm ${firstName},`, "Product Design", "& UX Specialist"]}
+            lines={[`I'm ${firstName},`, "I design for", "real people"]}
             highlightIndex={2}
           />
 
@@ -41,11 +42,11 @@ export function Hero({ personal }: HeroProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.6 }}
-            className="mt-8 max-w-lg text-base leading-[1.8] text-white/70 sm:text-lg"
+            className="mt-8 max-w-lg text-base leading-[1.8] text-white/75 sm:text-lg"
           >
-            UI/UX designer in {personal.location.split(",")[0]} — crafting
-            thoughtful interfaces in Figma, from wireframes to developer-ready
-            handoff.
+            A UI/UX designer in {city} who cares about clarity, warmth, and how
+            something feels the moment someone opens it. Figma from first sketch
+            to handoff — always with people in mind.
           </motion.p>
 
           <motion.div
@@ -56,19 +57,17 @@ export function Hero({ personal }: HeroProps) {
           >
             <motion.a
               href="#work"
-              whileHover={{ scale: 1.03, y: -2 }}
               whileTap={{ scale: 0.98 }}
-              className="inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-ink shadow-lg shadow-black/25"
+              className="inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-ink shadow-lg shadow-black/20"
             >
-              Portfolio
+              See my work
             </motion.a>
             <motion.a
               href={`mailto:${personal.email}`}
-              whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
               className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/5 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur-sm hover:bg-white/10"
             >
-              Hire me
+              Say hello
             </motion.a>
           </motion.div>
 
@@ -76,20 +75,20 @@ export function Hero({ personal }: HeroProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.85 }}
-            className="mt-10 inline-flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 px-5 py-4 backdrop-blur-sm"
+            className="mt-10 inline-flex max-w-full flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 px-5 py-4 backdrop-blur-sm sm:flex-row sm:items-center sm:gap-4"
           >
             <div>
               <p className="font-display text-3xl font-bold leading-none text-white">
                 4+
               </p>
               <p className="mt-1 text-xs leading-relaxed text-white/60">
-                Years experience
+                Years crafting for people
               </p>
             </div>
-            <div className="h-10 w-px bg-white/15" aria-hidden />
-            <p className="max-w-[200px] text-xs leading-[1.6] text-white/55">
-              Design-led work across visual evaluation, enterprise UI, and product
-              teams.
+            <div className="hidden h-10 w-px bg-white/15 sm:block" aria-hidden />
+            <p className="text-sm leading-[1.65] text-white/65">
+              Thoughtful design, honest feedback, and products that feel human
+              to use.
             </p>
           </motion.div>
         </div>

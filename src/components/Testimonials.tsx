@@ -12,8 +12,8 @@ export function Testimonials() {
         <MotionReveal>
           <SectionHeading
             label="Testimonials"
-            title="What collaborators say"
-            description="Replace these placeholders with real quotes when you have client or team endorsements."
+            title="What it's like working with me"
+            description="Calm, constructive, and focused on what helps people — not just pixels."
             align="center"
           />
         </MotionReveal>

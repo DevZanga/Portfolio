@@ -1,117 +1,117 @@
 export const designFocus = [
-  { value: "4+", label: "Years experience", sub: "Design & engineering" },
-  { value: "7+", label: "Figma disciplines", sub: "UI · Systems · Handoff" },
-  { value: "1000s", label: "Visual evaluations", sub: "Media & UI QA" },
-  { value: "Remote", label: "Global collaboration", sub: "Async · UK-based" },
+  { value: "4+", label: "Years designing", sub: "Products people use" },
+  { value: "7+", label: "Figma strengths", sub: "UI · Systems · Handoff" },
+  { value: "100%", label: "People-first", sub: "Every screen, every review" },
+  { value: "UK", label: "Based in Sheffield", sub: "Open to remote work" },
 ];
 
 export const services = [
   {
     title: "UI/UX Design",
     description:
-      "End-to-end interface design in Figma — from wireframes and user flows to polished, high-fidelity screens your team can ship.",
+      "Interfaces shaped around real people — from first wireframe to polished screens your team can build with confidence.",
     variant: "ui" as const,
     highlights: ["User flows", "Hi-fi UI", "Prototypes"],
   },
   {
-    title: "Visual QA & Evaluation",
+    title: "Design Critique & Review",
     description:
-      "Structured visual critique of generated UI, media, and layouts — rating hierarchy, polish, and coherence at scale.",
-    variant: "ai" as const,
-    highlights: ["Visual QA", "Critique", "At scale"],
+      "Honest, structured feedback on layouts and visuals — what helps users, what confuses them, and how to improve the experience.",
+    variant: "care" as const,
+    highlights: ["Clarity", "Empathy", "Polish"],
   },
   {
     title: "Design Systems & Handoff",
     description:
-      "Component libraries, tokens, and annotated specs so engineering receives everything needed to build pixel-perfect UI.",
+      "Shared components and clear specs so design and engineering stay aligned — and users get a consistent experience.",
     variant: "systems" as const,
-    highlights: ["Tokens", "Components", "Dev handoff"],
+    highlights: ["Tokens", "Components", "Handoff"],
   },
 ];
 
 export const whyHireMe = {
-  title: "Why hire me?",
+  title: "Why work with me?",
   description:
-    "I combine visual craft, design systems thinking, and hands-on engineering. From large-scale visual evaluation at Outlier to shipping enterprise UI at Nabtech — I care how products look, feel, and perform for real users.",
+    "I bring warmth and precision to every project. Whether I'm designing in Figma, reviewing visuals, or helping ship a product — I keep real people at the centre and communicate in plain, honest language.",
   stats: [
-    { value: "4+", label: "Years in product & UI" },
-    { value: "7", label: "Core Figma practices" },
-    { value: "1000s", label: "Visual QA tasks delivered" },
+    { value: "4+", label: "Years in design & product" },
+    { value: "7", label: "Core design practices" },
+    { value: "100%", label: "Human-centred approach" },
   ],
 };
 
 export const testimonials = [
   {
-    initials: "NT",
-    name: "Design Lead",
-    role: "Enterprise product team",
+    initials: "TM",
+    name: "Team Lead",
+    role: "Product collaboration",
     rating: "5.0",
     quote:
-      "Brings rare attention to spacing, hierarchy, and polish — feedback is always clear, constructive, and actionable.",
+      "Thoughtful, calm, and sharp on detail. Feedback always feels constructive — never harsh, always useful.",
   },
   {
-    initials: "UX",
-    name: "UX Collaborator",
-    role: "Cross-functional squad",
+    initials: "PD",
+    name: "Product Designer",
+    role: "Cross-functional partner",
     rating: "5.0",
     quote:
-      "Translates Figma intent into shipped UI without losing the original vision. Strong partner from critique to handoff.",
+      "Genuinely cares how things feel for users. Easy to work with and brings clarity when projects get messy.",
   },
 ];
 
 export const designProcess = [
   {
     step: "01",
-    title: "Discover",
+    title: "Listen",
     description:
-      "Map user goals, constraints, and existing patterns before touching pixels.",
+      "Understand who will use the product, what they need, and what success looks like for them.",
   },
   {
     step: "02",
-    title: "Define",
+    title: "Sketch",
     description:
-      "Wireframes and flows that align stakeholders early — fewer surprises later.",
+      "Map flows and layouts early so everyone shares the same picture before high-fidelity work.",
   },
   {
     step: "03",
     title: "Design",
     description:
-      "High-fidelity UI in Figma with tokens, components, and interaction states.",
+      "Craft interfaces in Figma with care — spacing, type, and states that feel natural to use.",
   },
   {
     step: "04",
-    title: "Deliver",
+    title: "Ship together",
     description:
-      "Annotated handoff and engineering partnership until the shipped UI matches intent.",
+      "Hand off with clarity and stay close to engineering until the live product matches the intent.",
   },
 ];
 
 export const selectedWork = [
   {
-    title: "Visual Quality Systems",
-    category: "UX Evaluation · Outlier",
+    title: "Human-Centred Visual Review",
+    category: "UX & Quality · Outlier",
     description:
-      "Rated and critiqued generated UI screenshots and media at scale — layout, hierarchy, polish, and coherence.",
-    tags: ["Visual QA", "Design Critique", "Structured Feedback"],
-    accent: "bg-gradient-to-br from-violet-600/30 to-indigo-900/40",
+      "Helped teams improve how digital products look and feel — clear feedback on layout, hierarchy, and everyday usability.",
+    tags: ["User empathy", "Visual craft", "Clear feedback"],
+    accent: "bg-gradient-to-br from-amber-900/25 to-violet-900/35",
     featured: true,
   },
   {
     title: "Enterprise Product UI",
     category: "Full-Stack · Nabtech",
     description:
-      "Translated Figma specs into enterprise web apps where feel and function both matter — design reviews to production.",
-    tags: ["Figma Handoff", "Design Systems", "React"],
-    accent: "bg-gradient-to-br from-fuchsia-600/25 to-violet-900/40",
+      "Built enterprise experiences where usability and polish mattered as much as functionality.",
+    tags: ["Figma handoff", "Design systems", "React"],
+    accent: "bg-gradient-to-br from-rose-900/20 to-violet-900/35",
     featured: false,
   },
   {
-    title: "Design-to-Code Pipeline",
+    title: "Design-to-Code Partnership",
     category: "Product · Emjay Solutions",
     description:
-      "Partnered with UX to ship accessible interfaces from wireframes — consistent components across Next.js products.",
-    tags: ["Prototyping", "Accessibility", "Next.js"],
-    accent: "bg-gradient-to-br from-indigo-500/30 to-slate-900/50",
+      "Worked alongside UX to ship accessible, consistent interfaces people could actually enjoy using.",
+    tags: ["Accessibility", "Consistency", "Next.js"],
+    accent: "bg-gradient-to-br from-indigo-900/25 to-slate-900/40",
     featured: false,
   },
 ];
@@ -119,14 +119,12 @@ export const selectedWork = [
 export const tools = [
   "Figma",
   "FigJam",
-  "Design Systems",
+  "User research",
   "Prototyping",
+  "Design systems",
   "Wireframing",
   "React",
-  "Next.js",
-  "Tailwind",
-  "User Flows",
-  "Developer Handoff",
-  "UI/UX Design",
-  "Visual QA",
+  "Accessibility",
+  "Collaboration",
+  "Clear handoff",
 ];

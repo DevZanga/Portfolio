@@ -14,7 +14,7 @@ export function Services() {
       className="scroll-mt-24 relative overflow-x-clip border-t border-line py-24 lg:py-32"
     >
       <div
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_0%,rgba(91,76,219,0.08),transparent)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_0%,rgba(124,92,191,0.06),transparent)]"
         aria-hidden
       />
 
@@ -22,8 +22,8 @@ export function Services() {
         <MotionReveal>
           <SectionHeading
             label="Services"
-            title="What I deliver"
-            description="Focused design services that take products from early concepts to polished, production-ready interfaces."
+            title="How I can help"
+            description="Human-centred design services — shaped around real users, honest conversation, and work you can trust."
           />
         </MotionReveal>
 
@@ -73,14 +73,14 @@ export function Services() {
 
                 <div className="flex items-center justify-between border-t border-line/60 px-7 py-4 lg:px-8">
                   <span className="text-xs font-medium text-muted">
-                    Available for projects
+                    Open for new work
                   </span>
                   <motion.a
                     href="#contact"
                     className="flex items-center gap-1 text-sm font-semibold text-accent"
                     whileHover={{ x: 4 }}
                   >
-                    Get in touch
+                    Say hello
                     <span aria-hidden>→</span>
                   </motion.a>
                 </div>
