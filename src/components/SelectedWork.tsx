@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { selectedWork } from "@/data/design";
 import { MotionReveal } from "./motion/MotionReveal";
 import { Tilt3D } from "./motion/Tilt3D";
+import { WorkPreview } from "./WorkPreview";
 
 export function SelectedWork() {
   const featured = selectedWork.find((p) => p.featured) ?? selectedWork[0];
@@ -39,32 +40,28 @@ export function SelectedWork() {
         </MotionReveal>
 
         <MotionReveal direction="scale">
-          <Tilt3D intensity={5}>
-            <article className="overflow-hidden rounded-3xl border border-line bg-surface shadow-lg">
-              <div className={`grid lg:grid-cols-2 ${featured.accent}`}>
-                <div className="flex min-h-[280px] items-center justify-center p-8 lg:min-h-[360px]">
-                  <div className="w-full max-w-sm rounded-2xl border border-white/15 bg-black/30 p-6 backdrop-blur-md">
-                    <div className="mb-4 flex gap-2">
-                      <div className="h-3 w-3 rounded-full bg-red-400/80" />
-                      <div className="h-3 w-3 rounded-full bg-amber-400/80" />
-                      <div className="h-3 w-3 rounded-full bg-emerald-400/80" />
-                    </div>
-                    <div className="space-y-3">
-                      <div className="h-3 w-1/2 rounded-full bg-white/50" />
-                      <div className="h-2 w-full rounded-full bg-white/25" />
-                      <div className="grid grid-cols-3 gap-2 pt-2">
-                        {[1, 2, 3].map((n) => (
-                          <div
-                            key={n}
-                            className="aspect-[4/5] rounded-lg bg-white/15"
-                          />
-                        ))}
-                      </div>
-                    </div>
-                  </div>
+          <Tilt3D intensity={6}>
+            <motion.article
+              className="group overflow-hidden rounded-3xl border border-line/80 bg-surface shadow-[0_8px_40px_-12px_rgba(124,92,191,0.25)] transition-shadow hover:shadow-[0_24px_56px_-16px_rgba(124,92,191,0.35)]"
+              whileHover={{ scale: 1.005 }}
+              transition={{ type: "spring", stiffness: 400, damping: 30 }}
+            >
+              <div className="grid lg:grid-cols-2">
+                <div
+                  className={`relative flex min-h-[300px] items-center justify-center overflow-hidden p-8 lg:min-h-[400px] lg:p-12 ${featured.accent}`}
+                >
+                  <div
+                    className="pointer-events-none absolute inset-0 opacity-60"
+                    style={{
+                      background:
+                        "radial-gradient(circle at 30% 20%, rgba(124,92,191,0.35), transparent 50%), radial-gradient(circle at 80% 80%, rgba(212,165,116,0.3), transparent 45%)",
+                    }}
+                  />
+                  <WorkPreview variant={featured.preview} featured />
                 </div>
-                <div className="flex flex-col justify-center bg-surface p-8 lg:p-12">
-                  <p className="font-mono text-xs uppercase tracking-wider text-accent">
+                <div className="relative flex flex-col justify-center bg-surface p-8 lg:p-12">
+                  <div className="pointer-events-none absolute right-0 top-0 h-40 w-40 rounded-full bg-accent/5 blur-3xl" />
+                  <p className="font-mono text-xs font-semibold uppercase tracking-wider text-accent">
                     {featured.category}
                   </p>
                   <h3 className="mt-3 font-display text-2xl font-bold leading-snug text-ink lg:text-3xl">
@@ -77,7 +74,7 @@ export function SelectedWork() {
                     {featured.tags.map((tag) => (
                       <li
                         key={tag}
-                        className="rounded-full bg-accent-soft px-3 py-1 text-xs font-medium text-accent"
+                        className="rounded-full border border-accent/15 bg-accent-soft px-3 py-1.5 text-xs font-semibold text-accent shadow-sm"
                       >
                         {tag}
                       </li>
@@ -85,33 +82,53 @@ export function SelectedWork() {
                   </ul>
                 </div>
               </div>
-            </article>
+            </motion.article>
           </Tilt3D>
         </MotionReveal>
 
         <div className="mt-8 grid gap-6 sm:grid-cols-2">
           {others.map((project, i) => (
             <MotionReveal key={project.title} delay={i * 100} direction="up">
-              <Tilt3D intensity={7} className="h-full">
-                <article className="flex h-full flex-col overflow-hidden rounded-2xl border border-line bg-surface shadow-md hover:shadow-xl">
-                  <div className={`h-40 ${project.accent} p-5`}>
-                    <div className="h-full rounded-xl border border-white/10 bg-black/20 p-4">
-                      <div className="h-2 w-1/2 rounded-full bg-white/40" />
-                      <div className="mt-2 h-2 w-full rounded-full bg-white/20" />
-                    </div>
+              <Tilt3D intensity={8} className="h-full">
+                <motion.article
+                  className="group flex h-full flex-col overflow-hidden rounded-2xl border border-line/80 bg-surface shadow-md transition-all hover:border-accent/25 hover:shadow-[0_20px_48px_-16px_rgba(124,92,191,0.28)]"
+                  whileHover={{ y: -6 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 28 }}
+                >
+                  <div
+                    className={`relative flex h-52 items-center justify-center overflow-hidden p-6 ${project.accent}`}
+                  >
+                    <div
+                      className="pointer-events-none absolute inset-0 opacity-50"
+                      style={{
+                        background:
+                          "radial-gradient(circle at 50% 0%, rgba(255,255,255,0.5), transparent 70%)",
+                      }}
+                    />
+                    <WorkPreview variant={project.preview} />
                   </div>
                   <div className="flex flex-1 flex-col p-6">
-                    <p className="font-mono text-xs uppercase tracking-wider text-accent">
+                    <p className="font-mono text-xs font-semibold uppercase tracking-wider text-accent">
                       {project.category}
                     </p>
-                    <h3 className="mt-2 font-display text-lg font-bold leading-snug text-ink">
+                    <h3 className="mt-2 font-display text-lg font-bold leading-snug text-ink group-hover:text-accent transition-colors">
                       {project.title}
                     </h3>
                     <p className="mt-2 flex-1 text-sm leading-[1.65] text-muted">
                       {project.description}
                     </p>
+                    <ul className="mt-4 flex flex-wrap gap-1.5">
+                      {project.tags.slice(0, 2).map((tag) => (
+                        <li
+                          key={tag}
+                          className="rounded-full bg-paper px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-muted"
+                        >
+                          {tag}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                </article>
+                </motion.article>
               </Tilt3D>
             </MotionReveal>
           ))}

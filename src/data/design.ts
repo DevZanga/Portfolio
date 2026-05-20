@@ -89,29 +89,35 @@ export const designProcess = [
 export const selectedWork = [
   {
     title: "Human-Centred Visual Review",
-    category: "UX & Quality · Outlier",
+    category: "UX & Quality, Outlier",
     description:
       "Helped teams improve how digital products look and feel, clear feedback on layout, hierarchy, and everyday usability.",
     tags: ["User empathy", "Visual craft", "Clear feedback"],
-    accent: "bg-gradient-to-br from-amber-900/25 to-violet-900/35",
+    accent:
+      "bg-gradient-to-br from-violet-200/80 via-purple-100/60 to-amber-100/70",
+    preview: "visual-review" as const,
     featured: true,
   },
   {
     title: "Enterprise Product UI",
-    category: "Full-Stack · Nabtech",
+    category: "Full-Stack, Nabtech",
     description:
       "Built enterprise experiences where usability and polish mattered as much as functionality.",
     tags: ["Figma handoff", "Design systems", "React"],
-    accent: "bg-gradient-to-br from-rose-900/20 to-violet-900/35",
+    accent:
+      "bg-gradient-to-br from-rose-200/70 via-fuchsia-100/50 to-violet-200/60",
+    preview: "enterprise" as const,
     featured: false,
   },
   {
     title: "Design-to-Code Partnership",
-    category: "Product · Emjay Solutions",
+    category: "Product, Emjay Solutions",
     description:
       "Worked alongside UX to ship accessible, consistent interfaces people could actually enjoy using.",
     tags: ["Accessibility", "Consistency", "Next.js"],
-    accent: "bg-gradient-to-br from-indigo-900/25 to-slate-900/40",
+    accent:
+      "bg-gradient-to-br from-indigo-200/70 via-sky-100/50 to-slate-200/60",
+    preview: "partnership" as const,
     featured: false,
   },
 ];
