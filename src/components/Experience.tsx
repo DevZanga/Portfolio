@@ -27,26 +27,9 @@ export function Experience({ experience }: ExperienceProps) {
         </MotionReveal>
 
         <ol className="relative">
-          <div
-            className="absolute left-[19px] top-3 hidden h-[calc(100%-1.5rem)] w-px bg-gradient-to-b from-accent via-line to-transparent lg:block"
-            aria-hidden
-          />
-
           {experience.map((role, index) => (
             <MotionReveal key={`${role.company}-${role.title}`} delay={index * 80}>
-              <li className="relative grid gap-6 pb-14 last:pb-0 lg:grid-cols-[48px_1fr] lg:gap-10">
-                <div className="hidden lg:flex lg:justify-center">
-                  <span
-                    className={`relative z-10 flex h-10 w-10 items-center justify-center rounded-full border-2 font-mono text-xs font-bold leading-none ${
-                      peopleCentred.has(role.company)
-                        ? "border-accent bg-accent-soft text-accent"
-                        : "border-line bg-surface text-muted"
-                    }`}
-                  >
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                </div>
-
+              <li className="relative pb-14 last:pb-0">
                 <article className="rounded-2xl border border-line bg-paper p-8 transition-shadow hover:shadow-lg hover:shadow-accent/8">
                   <div>
                       {peopleCentred.has(role.company) && (
@@ -75,12 +58,8 @@ export function Experience({ experience }: ExperienceProps) {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: bi * 0.04 }}
-                        className="flex gap-3 text-[15px] leading-[1.65] text-muted"
+                        className="text-[15px] leading-[1.65] text-muted"
                       >
-                        <span
-                          className="mt-2.5 h-1 w-4 shrink-0 rounded-full bg-accent"
-                          aria-hidden
-                        />
                         {bullet}
                       </motion.li>
                     ))}

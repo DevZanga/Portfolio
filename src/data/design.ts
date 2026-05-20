@@ -9,21 +9,21 @@ export const services = [
   {
     title: "UI/UX Design",
     description:
-      "Interfaces shaped around real people — from first wireframe to polished screens your team can build with confidence.",
+      "Interfaces shaped around real people, from first wireframe to polished screens your team can build with confidence.",
     variant: "ui" as const,
     highlights: ["User flows", "Hi-fi UI", "Prototypes"],
   },
   {
     title: "Design Critique & Review",
     description:
-      "Honest, structured feedback on layouts and visuals — what helps users, what confuses them, and how to improve the experience.",
+      "Honest, structured feedback on layouts and visuals: what helps users, what confuses them, and how to improve the experience.",
     variant: "care" as const,
     highlights: ["Clarity", "Empathy", "Polish"],
   },
   {
     title: "Design Systems & Handoff",
     description:
-      "Shared components and clear specs so design and engineering stay aligned — and users get a consistent experience.",
+      "Shared components and clear specs so design and engineering stay aligned, and users get a consistent experience.",
     variant: "systems" as const,
     highlights: ["Tokens", "Components", "Handoff"],
   },
@@ -32,7 +32,7 @@ export const services = [
 export const whyHireMe = {
   title: "Why work with me?",
   description:
-    "I bring warmth and precision to every project. Whether I'm designing in Figma, reviewing visuals, or helping ship a product — I keep real people at the centre and communicate in plain, honest language.",
+    "I bring warmth and precision to every project. Whether I'm designing in Figma, reviewing visuals, or helping ship a product, I keep real people at the centre and communicate in plain, honest language.",
   stats: [
     { value: "4+", label: "Years in design & product" },
     { value: "7", label: "Core design practices" },
@@ -47,7 +47,7 @@ export const testimonials = [
     role: "Product collaboration",
     rating: "5.0",
     quote:
-      "Thoughtful, calm, and sharp on detail. Feedback always feels constructive — never harsh, always useful.",
+      "Thoughtful, calm, and sharp on detail. Feedback always feels constructive, never harsh, always useful.",
   },
   {
     initials: "PD",
@@ -76,7 +76,7 @@ export const designProcess = [
     step: "03",
     title: "Design",
     description:
-      "Craft interfaces in Figma with care — spacing, type, and states that feel natural to use.",
+      "Craft interfaces in Figma with care, spacing, type, and states that feel natural to use.",
   },
   {
     step: "04",
@@ -91,7 +91,7 @@ export const selectedWork = [
     title: "Human-Centred Visual Review",
     category: "UX & Quality · Outlier",
     description:
-      "Helped teams improve how digital products look and feel — clear feedback on layout, hierarchy, and everyday usability.",
+      "Helped teams improve how digital products look and feel, clear feedback on layout, hierarchy, and everyday usability.",
     tags: ["User empathy", "Visual craft", "Clear feedback"],
     accent: "bg-gradient-to-br from-amber-900/25 to-violet-900/35",
     featured: true,

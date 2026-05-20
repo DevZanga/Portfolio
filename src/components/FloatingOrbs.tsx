@@ -36,12 +36,6 @@ export function FloatingOrbs() {
           }}
         />
       ))}
-
-      <motion.div
-        className="absolute left-1/2 top-1/3 h-px w-[120%] -translate-x-1/2 bg-gradient-to-r from-transparent via-white/10 to-transparent"
-        animate={{ opacity: [0.3, 0.7, 0.3], scaleX: [0.8, 1, 0.8] }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-      />
     </div>
   );
 }

@@ -122,17 +122,6 @@ export function DesignShowcase() {
           </div>
         </motion.div>
 
-        {/* Floating badge */}
-        <motion.div
-          className="card-3d absolute -right-2 bottom-4 z-20 rounded-full border border-accent/30 bg-accent/20 px-4 py-2 backdrop-blur-md"
-          style={{ transform: "translateZ(120px)" }}
-          animate={{ scale: [1, 1.04, 1] }}
-          transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-        >
-          <span className="font-mono text-xs font-medium text-white">
-            ✦ Design System
-          </span>
-        </motion.div>
       </motion.div>
 
       <div

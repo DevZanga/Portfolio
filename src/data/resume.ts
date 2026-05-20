@@ -11,7 +11,7 @@ export const resume: Resume = {
     github: "https://github.com/DevZanga",
   },
   about:
-    "I'm a designer who cares about how people actually experience digital products — not just how they look in a mockup. My work spans UI/UX in Figma, thoughtful visual review, and hands-on engineering, so I understand both the craft of design and what it takes to ship it. I listen carefully, explain my thinking clearly, and treat every screen as something a real person will use.",
+    "I'm a designer who cares about how people actually experience digital products, not just how they look in a mockup. My work spans UI/UX in Figma, thoughtful visual review, and hands-on engineering, so I understand both the craft of design and what it takes to ship it. I listen carefully, explain my thinking clearly, and treat every screen as something a real person will use.",
   experience: [
     {
       title: "Visual Quality & UX Specialist",
@@ -19,7 +19,7 @@ export const resume: Resume = {
       type: "Contract",
       bullets: [
         "Reviewed images, video, and interface layouts with a focus on clarity, hierarchy, and how they would feel to a real user.",
-        "Gave structured, honest feedback on visual work — what works, what confuses, and what could feel more polished.",
+        "Gave structured, honest feedback on visual work: what works, what confuses, and what could feel more polished.",
         "Worked independently across remote teams, keeping quality consistent even on high-volume projects.",
         "Bridged design critique and practical UX thinking in every review.",
       ],
@@ -42,7 +42,7 @@ export const resume: Resume = {
         "Led development of enterprise web apps with a strong focus on how the product feels in everyday use.",
         "Worked closely with designers, turning Figma specs into interfaces that stayed true to the original intent.",
         "Built and maintained APIs with Node.js while keeping the user experience at the centre of decisions.",
-        "Joined design reviews and sprint planning — comfortable on both design and engineering sides.",
+        "Joined design reviews and sprint planning, comfortable on both design and engineering sides.",
       ],
     },
     {
@@ -60,7 +60,7 @@ export const resume: Resume = {
     {
       name: "UI/UX Design",
       description:
-        "I design interfaces from scratch with real people in mind — hierarchy, spacing, and flows that feel natural.",
+        "I design interfaces from scratch with real people in mind, hierarchy, spacing, and flows that feel natural.",
     },
     {
       name: "Prototyping",
@@ -80,7 +80,7 @@ export const resume: Resume = {
     {
       name: "Collaboration",
       description:
-        "I work openly in Figma — comments, reviews, and honest conversation with teammates.",
+        "I work openly in Figma, comments, reviews, and honest conversation with teammates.",
     },
     {
       name: "Developer Handoff",
@@ -111,9 +111,9 @@ export const resume: Resume = {
     Other: ["Git", "GitHub", "Jira"],
   },
   certifications: [
-    "Visual Quality & UX Practice — Outlier / Freelance",
+    "Visual Quality & UX Practice (Outlier / Freelance)",
     "Agile Software Development & QA Practices",
   ],
   workingStyle:
-    "I'm easy to work with — I listen, give honest feedback kindly, and respect people's time. I'm organised, self-directed, and happy working async across time zones. I care about quality, but I also know when something is ready for real users.",
+    "I'm easy to work with, I listen, give honest feedback kindly, and respect people's time. I'm organised, self-directed, and happy working async across time zones. I care about quality, but I also know when something is ready for real users.",
 };

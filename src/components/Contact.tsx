@@ -26,7 +26,7 @@ export function Contact({ personal, certifications }: ContactProps) {
                 <p className="mt-4 text-sm leading-[1.65] text-white/90 sm:mt-5 sm:text-base lg:text-lg">
                   Whether you need a designer for a new product, a thoughtful
                   second pair of eyes on your UI, or a calm collaborator on your
-                  team — reach out. I reply personally.
+                  team. Reach out. I reply personally.
                 </p>
               </div>
 
@@ -68,11 +68,8 @@ export function Contact({ personal, certifications }: ContactProps) {
         <ul className="mt-8 grid gap-3 sm:mt-12 sm:grid-cols-2 sm:gap-4">
           {certifications.map((cert, i) => (
             <MotionReveal key={cert} delay={150 + i * 80} direction="up">
-              <li className="flex items-center gap-3 rounded-xl border border-line bg-surface px-4 py-4 sm:gap-4 sm:px-6 sm:py-5">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent-soft text-sm text-accent sm:h-10 sm:w-10">
-                  ✓
-                </span>
-                <span className="min-w-0 text-sm font-medium leading-relaxed text-ink">
+              <li className="rounded-xl border border-line bg-surface px-4 py-4 sm:px-6 sm:py-5">
+                <span className="text-sm font-medium leading-relaxed text-ink">
                   {cert}
                 </span>
               </li>

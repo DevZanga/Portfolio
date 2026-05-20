@@ -19,9 +19,6 @@ export function Marquee() {
             className="flex items-center gap-12 text-sm font-medium leading-normal text-muted"
           >
             {tool}
-            <span className="text-accent/80" aria-hidden>
-              ◆
-            </span>
           </span>
         ))}
       </motion.div>

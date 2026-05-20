@@ -18,8 +18,7 @@ export function SelectedWork() {
         <MotionReveal>
           <div className="mb-14 flex flex-wrap items-end justify-between gap-8">
             <div className="max-w-2xl">
-              <p className="mb-3 inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-accent">
-                <span className="h-px w-6 bg-accent" aria-hidden />
+              <p className="mb-3 font-mono text-xs uppercase tracking-[0.2em] text-accent">
                 Portfolio
               </p>
               <h2 className="font-display leading-display text-3xl font-bold tracking-tight text-ink sm:text-4xl lg:text-5xl">
@@ -34,7 +33,7 @@ export function SelectedWork() {
               href="#experience"
               className="shrink-0 rounded-full border border-line bg-surface px-5 py-2.5 text-sm font-semibold text-ink transition-colors hover:border-accent/40 hover:text-accent"
             >
-              See all →
+              See all
             </a>
           </div>
         </MotionReveal>

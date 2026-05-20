@@ -23,7 +23,7 @@ export function Services() {
           <SectionHeading
             label="Services"
             title="How I can help"
-            description="Human-centred design services — shaped around real users, honest conversation, and work you can trust."
+            description="Human-centred design services, shaped around real users, honest conversation, and work you can trust."
           />
         </MotionReveal>
 
@@ -35,16 +35,11 @@ export function Services() {
                 whileHover={{ y: -6 }}
                 transition={{ type: "spring", stiffness: 400, damping: 28 }}
               >
-                <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-transparent via-accent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-
                 <div className="flex flex-1 flex-col p-7 lg:p-8">
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-accent to-accent-light shadow-lg shadow-accent/30">
                       <ServiceIcon variant={service.variant} />
                     </div>
-                    <span className="font-mono text-xs font-medium text-accent/50">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
                   </div>
 
                   <h3 className="mt-6 font-display text-xl font-bold leading-[1.35] tracking-tight text-ink lg:text-[1.35rem]">
@@ -80,8 +75,7 @@ export function Services() {
                     className="flex items-center gap-1 text-sm font-semibold text-accent"
                     whileHover={{ x: 4 }}
                   >
-                    Say hello
-                    <span aria-hidden>→</span>
+                    Hire me
                   </motion.a>
                 </div>
               </motion.article>

@@ -13,7 +13,7 @@ export function Testimonials() {
           <SectionHeading
             label="Testimonials"
             title="What it's like working with me"
-            description="Calm, constructive, and focused on what helps people — not just pixels."
+            description="Calm, constructive, and focused on what helps people, not just pixels."
             align="center"
           />
         </MotionReveal>
@@ -39,7 +39,7 @@ export function Testimonials() {
                     {t.rating}
                   </span>
                 </div>
-                <p className="mt-5 text-sm leading-[1.7] text-muted">&ldquo;{t.quote}&rdquo;</p>
+                <p className="mt-5 text-sm leading-[1.7] text-muted">{t.quote}</p>
               </motion.blockquote>
             </MotionReveal>
           ))}

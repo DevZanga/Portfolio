@@ -19,8 +19,7 @@ export function SectionHeading({
 
   return (
     <div className={`mb-14 max-w-2xl ${alignClass}`}>
-      <p className="mb-4 inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.18em] text-accent">
-        <span className="h-px w-6 bg-accent" aria-hidden />
+      <p className="mb-4 font-mono text-xs uppercase tracking-[0.18em] text-accent">
         {label}
       </p>
       <h2

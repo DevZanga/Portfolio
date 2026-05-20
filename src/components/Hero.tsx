@@ -11,7 +11,6 @@ interface HeroProps {
 }
 
 export function Hero({ personal }: HeroProps) {
-  const firstName = personal.name.split(" ")[0];
   const city = personal.location.split(",")[0];
 
   return (
@@ -29,12 +28,12 @@ export function Hero({ personal }: HeroProps) {
             animate={{ opacity: 1, y: 0 }}
             className="mb-4 font-mono text-sm font-medium text-amber-200/90"
           >
-            Hello — glad you&apos;re here
+            Hello, glad you&apos;re here
           </motion.p>
 
           <StaggerText
             className="font-display text-3xl font-bold tracking-tight text-white sm:text-5xl lg:text-[3.5rem] lg:leading-[1.32]"
-            lines={[`I'm ${firstName},`, "I design for", "real people"]}
+            lines={[`I'm ${personal.name}`, "Product & Brand", "Designer"]}
             highlightIndex={2}
           />
 
@@ -46,7 +45,7 @@ export function Hero({ personal }: HeroProps) {
           >
             A UI/UX designer in {city} who cares about clarity, warmth, and how
             something feels the moment someone opens it. Figma from first sketch
-            to handoff — always with people in mind.
+            to handoff, always with people in mind.
           </motion.p>
 
           <motion.div
@@ -67,7 +66,7 @@ export function Hero({ personal }: HeroProps) {
               whileTap={{ scale: 0.98 }}
               className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/5 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur-sm hover:bg-white/10"
             >
-              Say hello
+              Hire me
             </motion.a>
           </motion.div>
 
@@ -85,7 +84,6 @@ export function Hero({ personal }: HeroProps) {
                 Years crafting for people
               </p>
             </div>
-            <div className="hidden h-10 w-px bg-white/15 sm:block" aria-hidden />
             <p className="text-sm leading-[1.65] text-white/65">
               Thoughtful design, honest feedback, and products that feel human
               to use.

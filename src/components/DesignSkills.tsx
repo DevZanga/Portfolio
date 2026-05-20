@@ -6,8 +6,6 @@ import { MotionReveal } from "./motion/MotionReveal";
 import { Tilt3D } from "./motion/Tilt3D";
 import { SectionHeading } from "./SectionHeading";
 
-const icons = ["◈", "◇", "◆", "○", "◎", "▣", "◐"];
-
 interface DesignSkillsProps {
   figmaSkills: FigmaSkill[];
 }
@@ -23,7 +21,7 @@ export function DesignSkills({ figmaSkills }: DesignSkillsProps) {
           <SectionHeading
             label="Figma toolkit"
             title="What I bring to every file"
-            description="End-to-end Figma practice — not just pretty screens, but systems teams can build from."
+            description="End-to-end Figma practice, not just pretty screens, but systems teams can build from."
           />
         </MotionReveal>
 
@@ -41,9 +39,6 @@ export function DesignSkills({ figmaSkills }: DesignSkillsProps) {
                     i === 0 ? "lg:flex-row lg:items-start lg:gap-8" : ""
                   }`}
                 >
-                  <span className="font-mono text-2xl leading-none text-accent/35">
-                    {icons[i % icons.length]}
-                  </span>
                   <div className={i === 0 ? "lg:flex-1" : ""}>
                     <h3
                       className={`font-display font-bold leading-snug text-ink ${

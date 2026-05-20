@@ -35,7 +35,7 @@ export function TechnicalSkills({ technicalSkills }: TechnicalSkillsProps) {
             variant="dark"
             label="Also fluent in"
             title="I also build"
-            description="Enough engineering to collaborate honestly — so what we design can actually ship."
+            description="Enough engineering to collaborate honestly, so what we design can actually ship."
           />
         </MotionReveal>
 

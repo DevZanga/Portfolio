@@ -20,7 +20,7 @@ const pillars = [
   },
   {
     title: "Calm collaboration",
-    text: "I work with teams openly — listening as much as I design.",
+    text: "I work with teams openly, listening as much as I design.",
   },
 ];
 
@@ -32,7 +32,7 @@ export function About({ about, workingStyle }: AboutProps) {
           <SectionHeading
             label="About"
             title="A designer who actually listens"
-            description="I care about people — how they feel when they open an app, read a screen, or tap a button."
+            description="I care about people: how they feel when they open an app, read a screen, or tap a button."
           />
         </MotionReveal>
 

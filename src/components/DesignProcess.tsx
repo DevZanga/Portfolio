@@ -14,7 +14,7 @@ export function DesignProcess() {
           <SectionHeading
             label="Process"
             title="How I work with you"
-            description="A calm, human process — listening first, designing with care, shipping together."
+            description="A calm, human process: listening first, designing with care, shipping together."
           />
         </MotionReveal>
 
@@ -38,7 +38,6 @@ export function DesignProcess() {
                   <p className="mt-3 text-sm leading-[1.65] text-muted">
                     {step.description}
                   </p>
-                  <div className="pointer-events-none absolute -right-4 -bottom-4 h-24 w-24 rounded-full bg-accent/8 blur-2xl" />
                 </motion.article>
               </Tilt3D>
             </MotionReveal>
