@@ -1,6 +1,7 @@
+
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { Geist_Mono, Inter, Outfit } from "next/font/google";
-import { GrainOverlay } from "@/components/GrainOverlay";
 import "./globals.css";
 
 const inter = Inter({
@@ -26,31 +27,26 @@ export const viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "ZANGA · Adebayo Ibrahim · Human-Centred UI/UX",
+  title: "Adebayo Ibrahim | Lead UX Designer & AI Evaluation Specialist",
   description:
-    "ZANGA · UI/UX designer in Sheffield. Warm, people-first interfaces in Figma, from wireframes to handoff.",
+    "Lead UX Designer, Software Engineer and AI Evaluation Specialist based in Sheffield, UK. Designing better experiences and evaluating better AI.",
   openGraph: {
-    title: "ZANGA · Adebayo Ibrahim · Human-Centred UI/UX",
+    title: "Adebayo Ibrahim | Lead UX Designer & AI Evaluation Specialist",
     description:
-      "A designer who cares how products feel for real people: thoughtful, clear, and easy to work with.",
+      "Designing better experiences. Evaluating better AI.",
     type: "website",
   },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: ReactNode }>) {
   return (
     <html
       lang="en"
       className={`${inter.variable} ${outfit.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full font-sans">
-        {children}
-        <GrainOverlay />
-      </body>
+      <body className="min-h-full font-sans">{children}</body>
     </html>
   );
 }
