@@ -17,7 +17,9 @@ const roles = [
   ["FEB 2018 — FEB 2019", "Brand Designer", "Freelance", "Created brand identities, logos, visual guidelines and marketing assets for clients."]
 ];
 
-const areas = [
+type ExpertiseArea = [string, string, string, string[]];
+
+const areas: ExpertiseArea[] = [
   ["01 / LEADERSHIP", "UX leadership & product strategy", "Connecting user needs with product goals from discovery through delivery.", ["End-to-end product design", "User research & usability testing", "Journey mapping and task flows", "Workshops and design critiques", "Agile collaboration"]],
   ["02 / EVALUATION", "AI evaluation & quality review", "Checking whether outputs follow the brief, meet requirements and stand up to scrutiny.", ["Instruction adherence", "Accuracy, relevance and completeness", "Structured-output and schema checks", "Edge-case and invalid-response analysis", "Evidence-based feedback"]],
   ["03 / DESIGN", "Product design & interface craft", "Creating clear, consistent and accessible interfaces that help people complete tasks.", ["Figma, wireframes and prototypes", "Interaction and visual design", "Information architecture", "Design systems and UI guidelines", "WCAG 2.1-aware design"]],
