@@ -109,3 +109,17 @@ html{scroll-behavior:smooth;scroll-padding-top:80px;overflow-x:hidden}body{margi
   height: auto;
   object-fit: contain;
 }
+@media (min-width: 651px) {
+  .featured .mock.cinema {
+    height: auto;
+    min-height: 0;
+    padding: 20px;
+  }
+
+  .featured .mock.cinema img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
