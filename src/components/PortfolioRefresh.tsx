@@ -41,7 +41,61 @@ export default function PortfolioRefresh() {
       <div className="ticker">PRODUCT THINKING　 ✳　 UX LEADERSHIP　 ✳　 AI EVALUATION　 ✳　 SOFTWARE QUALITY　 ✳　 ACCESSIBLE DESIGN</div>
       <section className="section split" id="about"><div><p className="eyebrow">01 — THE APPROACH</p><h2>Turning complexity<br/>into <em>clarity.</em></h2></div><div className="prose"><h3>I work at the intersection of people, products and technology.</h3><p>My background spans end-to-end product design, UX leadership, software engineering and AI output evaluation. I bring a strategic, user-centred mindset to discovery and delivery, while using technical understanding to assess how products and generated outputs behave beyond the surface.</p><p>Whether mapping a journey, guiding interface decisions or reviewing an AI-generated response, I value clear requirements, thoughtful execution and evidence-led improvement.</p><blockquote>Good design should feel intuitive. Good evaluation should be explainable.</blockquote></div></section>
       <section className="section" id="expertise"><p className="eyebrow">02 — WHAT I BRING</p><h2>Strategy meets <em>craft and rigour.</em></h2><div className="expertise">{areas.map(a=><article key={a[0]}><small>{a[0]}</small><h3>{a[1]}</h3><p>{a[2]}</p><ul>{a[3].map(x=><li key={x}>{x}</li>)}</ul></article>)}</div></section>
-      <section className="section" id="work"><div className="heading-row"><div><p className="eyebrow">03 — SELECTED WORK</p><h2>Ideas made <em>tangible.</em></h2></div><p>Selected product and digital design projects listed in my CV.</p></div><div className="projects">{projects.map(p=><article className={p.n==="01"?"project featured":"project"} key={p.n}><Visual kind={p.visual}/><div className="project-copy"><small>{p.type} <span>{p.n} / 03</span></small><h3>{p.title}</h3><p>{p.desc}</p><div className="tags">{p.tags.map(t=><i key={t}>{t}</i>)}</div></div></article>)}</div><p className="disclaimer">Project visuals are illustrative recreations for presentation, not original client screenshots.</p></section>
+     <section className="section" id="work">
+  <div className="heading-row">
+    <div>
+      <p className="eyebrow">03 — SELECTED WORK</p>
+      <h2>Ideas made <em>tangible.</em></h2>
+    </div>
+    <p>Selected product and digital design projects.</p>
+  </div>
+
+  <div className="projects">
+    {projects.map(p=><article className={p.n==="01"?"project featured":"project"} key={p.n}>
+      <Visual kind={p.visual}/>
+      <div className="project-copy">
+        <small>{p.type} <span>{p.n} / 03</span></small>
+        <h3>{p.title}</h3>
+        <p>{p.desc}</p>
+        <div className="tags">{p.tags.map(t=><i key={t}>{t}</i>)}</div>
+      </div>
+    </article>)}
+  </div>
+
+  <article className="case-study">
+    <div className="case-intro">
+      <p className="eyebrow">CASE STUDY / 01</p>
+      <h3>From an initial idea to a connected cinema experience.</h3>
+      <p>I worked directly with the client as Lead Product Designer, helping define the product requirements from scratch and shaping the experience across mobile and desktop.</p>
+    </div>
+
+    <div className="case-grid">
+      <div>
+        <small>THE CHALLENGE</small>
+        <p>Bring film discovery, cinema search, showtimes, seat selection and ticket booking together in one clear, connected journey.</p>
+      </div>
+      <div>
+        <small>MY CONTRIBUTION</small>
+        <p>Led the end-to-end UX/UI design process, from product definition and research through wireframes, interface design and interactive prototyping. The client's existing brand identity was retained.</p>
+      </div>
+      <div>
+        <small>DESIGN PROCESS</small>
+        <p>Worked with the client to shape requirements, map the user journey, explore structure through wireframes and design responsive mobile and desktop interfaces.</p>
+      </div>
+      <div>
+        <small>TEST, LEARN & REFINE</small>
+        <p>Usability testing surfaced friction across film discovery, cinema and showtime selection, seat selection and booking. I used feedback to refine the experience before the final client review and approval.</p>
+      </div>
+    </div>
+
+    <div className="case-outcome">
+      <b>DESIGN FOCUS</b>
+      <span>Make every step of the cinema booking journey feel clear, connected and straightforward.</span>
+    </div>
+  </article>
+
+  <p className="disclaimer">Project visuals are illustrative recreations for presentation, not original client screenshots.</p>
+</section>
       <section className="section split"><div><p className="eyebrow">04 — AI EVALUATION</p><h2>Quality is more<br/>than <em>appearance.</em></h2></div><div className="prose"><h3>A polished output is not necessarily a correct one.</h3><p>My review process looks at the brief, the evidence and the behaviour — not just the finish.</p><div className="steps">{[["01","Understand","Identify the objective, instructions and acceptance criteria."],["02","Inspect","Review the output or user journey for coverage and expected behaviour."],["03","Validate","Check omissions, contradictions, invalid structure and edge cases."],["04","Explain","Record evidence, impact and actionable recommendations."]].map(s=><div key={s[0]}><b>{s[0]}</b><span><strong>{s[1]}</strong><small>{s[2]}</small></span></div>)}</div></div></section>
       <section className="section split" id="experience"><div><p className="eyebrow">05 — EXPERIENCE</p><h2>Where I’ve<br/><em>made an impact.</em></h2></div><div><div className="roles">{roles.map(r=><article key={r[1]+r[2]}><small>{r[0]}</small><div><h3>{r[1]}<span>{r[2]}</span></h3><p>{r[3]}</p></div></article>)}</div><div className="engineering"><b>⌘　Engineering foundation</b><p>Selected software engineering experience associated with Nabtech Limited and Emjay Solutions, spanning modern web applications, APIs, databases, testing and AI-integrated product features.</p></div></div></section>
       <section className="section split"><div><p className="eyebrow">06 — TOOLKIT</p><h2>Tools for thoughtful<br/><em>execution.</em></h2></div><div className="toolkit">{[["Design & research","Figma · User research · Usability testing · Journey mapping · Wireframing · Prototyping · Design systems · WCAG 2.1"],["Development","JavaScript · TypeScript · Python · Java · React · Next.js · React Native · Node.js · Express · HTML · CSS · Tailwind CSS"],["Data & quality","PostgreSQL · MySQL · MongoDB · Firebase · REST · GraphQL · Jest · Mocha · Cypress · Pytest · Schema validation"],["Delivery & infrastructure","Git · Docker · AWS · CI/CD · Netlify · Vercel · Agile collaboration"]].map(t=><article key={t[0]}><b>{t[0]}</b><p>{t[1]}</p></article>)}</div></section>
