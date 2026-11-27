@@ -27,7 +27,7 @@ const areas: ExpertiseArea[] = [
 ];
 
 function Visual({ kind }: { kind: string }) {
-  if (kind === "cinema") return <div className="mock cinema"><small>CINETRIPS / DISCOVER</small><span>FIND YOUR NEXT FILM</span><strong>Make a night<br/>of the movies.</strong><i>Discover　 Showtimes　 Tickets</i><b className="poster p1"/><b className="poster p2"/></div>;
+  if (kind === "cinema") return <div className="mock cinema"><img src="/Portfolio/cinetrips-movie-posters.png" alt="CineTrips movie posters" /></div>;
   if (kind === "health") return <div className="mock health"><b>BALDEV<small> HEALTHCARE</small></b><span>PEOPLE FIRST. CARE ALWAYS.</span><strong>Connecting care<br/>with confidence.</strong><i>Explore services ↗</i></div>;
   return <div className="mock shield"><aside>SHIELDPOINT<small>Overview</small><small>Policies</small><small>Claims</small><small>Reports</small></aside><div><small>ADMINISTRATION / OVERVIEW</small><strong>Good afternoon.</strong><section><i/><i/><i/></section><footer>▂ ▅ ▃ ▇ ▅</footer></div></div>;
 }
