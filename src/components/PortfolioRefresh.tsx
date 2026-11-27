@@ -68,7 +68,12 @@ export default function PortfolioRefresh() {
       <h3>From an initial idea to a connected cinema experience.</h3>
       <p>I worked directly with the client as Lead Product Designer, helping define the product requirements from scratch and shaping the experience across mobile and desktop.</p>
     </div>
-
+<div className="case-visual">
+  <img
+    src="/Portfolio/cinetrips-phone-showcase.jpg"
+    alt="Illustrative CineTrips mobile booking screens"
+  />
+</div>
     <div className="case-grid">
       <div>
         <small>THE CHALLENGE</small>
